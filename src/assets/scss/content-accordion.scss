@@ -1,0 +1,97 @@
+.content-accordion {
+  padding: 11.0625rem 0 18.75rem;
+  position: relative;
+  overflow: hidden;
+  @include p10-block() {
+    padding: 4.0625rem 0 6.25rem;
+  }
+}
+.content-accordion__img {
+  position: absolute;
+  width: 48.3125rem;
+  height: 75rem;
+  object-fit: cover;
+  transform: translate(11.625rem) !important;
+  left: 50%;
+  top: -6.6875rem;
+  @include p19-block() {
+    width: 34.3125rem;
+    height: 54rem;
+    transform: translate(23.625rem)!important;
+    top: -2.6875rem;
+  }
+  @include p16-block() {
+    width: 15.3125rem;
+    height: 31rem;
+    transform: translate(-14.375rem)!important;
+    top: 23.3125rem;
+  }
+  @include p13-block() {
+    transform: translate(-9.375rem)!important;
+  }
+  @include p10-block() { 
+    display:none;
+   };
+}
+.content-accordion__wrap {
+  @include row-flex();
+  .content-accordion__wraper {
+    margin-top: 7.125rem;
+    @include col();
+    @include size(5);
+    @include shift-left(1);
+    @include shift-p22-left(1);
+    @include size-p19(6);
+    @include size-p13(7);
+    @include size-p10(14);
+  }
+  .section-info__small {
+    margin-bottom: 3.3125rem;
+  }
+  .section-info__big {
+    margin-bottom: 2.25rem;
+  }
+  .section-info__desc {
+    @include gap(3);
+    @include p17-block() {
+      @include gap(5);
+    }
+    @include p10-block() {
+      @include gap(8);
+    }
+  }
+  .section-info__accordion {
+    @include col();
+    @include size(4.35);
+    @include shift-left(0.65);
+    @include shift-p22-left(0.65);
+    @include size-p17(6);
+    @include size-p10(14);
+    @include shift-p10-left(1);
+  }
+  .section-info__accordion-item {
+    padding: 2.9375rem 0 2.6875rem;
+    &:not(:last-child) {
+      border-bottom: 0.0625rem solid $main_color;
+      width: 100%;
+      padding: 2.9375rem 0 2.5625rem;
+    }
+    & svg {
+      width: 2rem;
+      height: 2rem;
+      margin: 0 2.3125rem 0 auto;
+    }
+  }
+  .section-info__accordion-item-link {
+    display: flex;
+    & svg {
+      @include p5-block() {
+        margin: 0 1.25rem 0 auto;
+      }
+    }
+  }
+
+  .section-info__accordion-item-title {
+    @include font('Regular');
+  }
+}

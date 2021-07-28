@@ -1,0 +1,102 @@
+.menu {
+  width: 100%;
+}
+.menu-item {
+  position: relative;
+  padding: 0.5rem 0;
+  padding-left: 1.125rem;
+  &:not(:last-child) {
+    &::after {
+      left: 0;
+      bottom: 0;
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 0.0625rem;
+      border-bottom: 0.0625rem solid $main_color;
+    }
+  }
+  & span {
+    font-size: 0.625rem;
+    @include font('Bold');
+    line-height: 1.5625rem;
+    letter-spacing: -0.0125rem;
+    background-color: $green;
+    padding: 0.4375rem 0.6875rem;
+    border-radius: 0.9375rem;
+    color: $black;
+    margin-left: 0.6875rem;
+  }
+}
+
+
+
+
+// click //
+
+
+
+.js-open-menu {
+  overflow: hidden;
+  z-index: 9999;
+
+  .menu {
+    width: 100%;
+    height: 100%;
+  position: fixed;
+  z-index: 9999999;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow: scroll;
+  &::-webkit-scrollbar {
+    width: 0;
+    opacity: 0;
+    display: none;
+    height: 0;
+  }
+  }
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 18.75rem;
+    margin-top: 1.875rem;
+    left: 6.25rem;
+    @include p10-block() { 
+      left: 0.625rem;
+     };
+  }
+  .menu-item {
+    position: relative;
+    padding: 0.5rem 0;
+    padding-left: 1.125rem;
+    &:not(:last-child) {
+      &::after {
+        left: 0;
+        bottom: 0;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 0.0625rem;
+        border-bottom: 0.0625rem solid $main_color;
+      }
+    }
+    & span {
+      font-size: 0.625rem;
+      @include font('Bold');
+      line-height: 1.5625rem;
+      letter-spacing: -0.0125rem;
+      background-color: $green;
+      padding: 0.4375rem 0.6875rem;
+      border-radius: 0.9375rem;
+      color: $black;
+      margin-left: 0.6875rem;
+    }
+  }
+  .offer__menu-wrap {
+    @include p10-block() {
+      display: block;
+   }
+  }
+}

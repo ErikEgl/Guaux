@@ -1,0 +1,63 @@
+@font-face {
+  font-weight: normal;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-display: swap;
+  @import url('../fonts/https://fonts.googleapis.com/css?family=Roboto:100,400,500&display=swap');
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: 'Barlow Bold';
+  font-style: normal;
+  src: local('Barlow Bold'), local('Barlow-Bold'),
+    url('../fonts/Barlow-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: 'Barlow LightCond';
+  font-style: normal;
+  src: local('Barlow Light Condensed'), local('Barlow-LightCond'),
+    url('../fonts/BarlowCondensed-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: 'Barlow BoldCond';
+  font-style: normal;
+  src: local('Barlow Bold Condensed'), local('Barlow-BoldCond'),
+    url('../fonts/BarlowCondensed-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-weight: 600;
+  font-family: 'Barlow Semibold';
+  font-style: normal;
+  src: local('Barlow Semibold'), local('Barlow-Semibold'),
+    url('../fonts/Barlow-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: 'Barlow Regular';
+  font-style: normal;
+  src: local('Barlow Regular'), local('Barlow-Regular'),
+    url('../fonts/Barlow-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-weight: 600;
+  font-family: 'Barlow SemiboldCond';
+  font-style: normal;
+  src: local('Barlow Semibold Condensed'), local('Barlow-SemiboldCond'),
+    url('../fonts/BarlowCondensed-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: 'Barlow Light';
+  font-style: normal;
+  src: local('Barlow Light'), local('Barlow-Light'),
+    url('../fonts/Barlow-Light.ttf') format('truetype');
+}

@@ -1,0 +1,27 @@
+.section-info {
+}
+.section-info__small {
+  color: $green;
+  margin-bottom: 2rem;
+  @include font(Semibold);
+  text-transform: uppercase;
+  font-size: 1.1875rem;
+  line-height: 1.1875rem;
+  letter-spacing: 0rem;
+  text-align: left;
+  display: inline-block;
+}
+.section-info__big {
+    margin-bottom: 2.6875rem;
+}
+.section-info__desc p{
+  @include font(Regular);
+  font-size: 1rem;
+  line-height: 1.5625rem;
+  letter-spacing: -0.0213rem;
+  color: $main_color;
+  text-align: left;
+  &:not(:last-child) {
+      margin-bottom: 1.6875rem;
+  }
+}

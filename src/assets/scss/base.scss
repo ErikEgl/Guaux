@@ -1,0 +1,102 @@
+@include reset();
+body {
+  color: $main_color;
+  font-family: Barlow Regular;
+  @include font('Regular');
+  background-color: $black;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+h1 {
+    // font-size:16vmin;
+  font-size: clamp(30px, 16vmin, 120px);
+  @include font(BoldCond);
+  text-transform: uppercase;
+  line-height: clamp(0.5, 0.9, 1.5);
+  letter-spacing: -0.1075rem;
+  word-wrap: normal;
+  // @include p16-block() { 
+  //   font-size: 7.8125rem;
+  //   line-height: 6.25rem;
+  //  };
+  // @include p12-block() { 
+  //   font-size: 6.875rem;
+
+  //  };
+  //  @include p5-block() { 
+  //   font-size: 3.875rem;
+  //   line-height: 4rem;
+  //  }
+
+  
+}
+h2 {
+  @extend h1;
+}
+h3 {
+}
+h4 {
+  font-size: 2.0625rem;
+  @include font('SemiboldCond');
+  line-height: 2.4375rem;
+  letter-spacing: 0rem;
+  text-transform: uppercase;
+}
+h5 {
+  font-size: 1.4375rem;
+  @include font('Bold');
+  line-height: 1.75rem;
+  letter-spacing: 0rem;
+}
+h6 {
+  @include font("Bold");
+  font-size: 1.0625rem;
+  line-height: 1.5625rem;
+  letter-spacing: -0.0213rem;
+  color: $main_color;
+  text-align: left;
+}
+
+p,
+.menu ul li {
+  font-size: 1rem;
+  @include font(Regular);
+  line-height: 1.5625rem;
+  letter-spacing: -0.0225rem;
+}
+.menu ul li {
+  font-size: 1.125rem;
+  @include font(Regular);
+  line-height: 2.125rem;
+  letter-spacing: -0.0225rem;
+}
+
+a {
+  color: $main_color;
+  @include anim();
+  display: inline-block;
+  text-decoration: none;
+  &:hover {
+    color: $green;
+  }
+}
+
+
+textarea:focus, input:focus{
+  outline: none;
+  color: $main_color;
+}
+
+.btn {
+  border-radius: 1.5625rem;
+  background-color: $green;
+  color: $black;
+  @include font('Bold');
+  text-decoration: none;
+  
+}
+
+

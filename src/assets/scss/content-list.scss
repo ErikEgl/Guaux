@@ -1,0 +1,112 @@
+.content-list {
+  padding: 9.625rem 0 32.1875rem;
+  position: relative;
+  overflow: hidden;
+
+  & > img {
+    position: absolute;
+  width:  clamp(60rem, 67vmin, 73.25rem);
+   height: clamp(59.5rem, 67vmin, 72.5rem);
+    transform: translate(14.75rem);
+    right: 50%;
+    top: 4.4375rem;
+    z-index: -1;
+    @include p12-block() {  
+      width: 43.75rem;
+      height: 43.3125rem;
+      transform: translate(7.0625rem);
+      top: 5.375rem;
+     }
+    
+    @include p7-block() {  
+      width: 21.875rem;
+      height: 21.625rem;
+      transform: translate(-1.4375rem);
+      top: 24.125rem;
+     }
+    @include p5-block() {  
+      width: 16.875rem;
+      height: 16.6875rem;
+      transform: translate(-0.5rem);
+     }
+    
+  }
+  @include p10-block() {  
+    padding: 9.625rem 0 13.4375rem;
+   }
+   @include p7-block() { 
+    padding: 9.625rem 0 7.1875rem;
+    };
+}
+.content-list__wrap {
+  @include row-flex();
+  @include p7-block() {
+    flex-direction: column;
+  }
+  .content-list__wraper {
+    @include col();
+    @include size(4);
+    @include shift-left(1);
+    @include shift-p22-left(1);
+
+    @include size-p16(5);
+    @include size-p12(6);
+    @include size-p7(13);
+    @include size-p5(14);
+
+  }
+  .section-info__small {
+    margin-left: 0.4375rem;
+    margin-bottom: 3.625rem;
+  }
+  .section-info__big {
+    margin-bottom: 2.25rem;
+  }
+  .section-info__desc {
+    @include gap(3);
+    @include p10-block() {
+      @include gap(5);
+    }
+    @include p7-block() {
+      @include gap(8);
+    }
+  }
+  .section-info__list {
+    @include col();
+    @include size(4);
+    @include shift-left(2);
+    @include shift-p22-left(2);
+
+    margin-top: 7.0625rem;
+    @include size-p16(5);
+    @include size-p12(6);
+    @include shift-p7-left(1);
+    @include size-p7(12);
+    @include size-p5(14);
+  }
+  .section-info__list-item {
+    display: flex;
+    &:not(:last-child) {
+      margin-bottom: 2.25rem;
+    }
+    & svg {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+  .section-info__list-item-wrap {
+    margin-left: 1.25rem;
+  }
+  .section-info__list-item-title {
+    font-size: 1.0625rem;
+    @include font('Bold');
+    line-height: 1.5625rem;
+    letter-spacing: -0.0213rem;
+  }
+  .section-info__list-item-text {
+    font-size: 1.0625rem;
+    @include font('Light');
+    line-height: 1.5625rem;
+    letter-spacing: -0.0213rem;
+  }
+}

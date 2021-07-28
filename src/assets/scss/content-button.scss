@@ -1,0 +1,109 @@
+.content-button {
+  padding: 4.375rem 0 15.5625rem;
+  position: relative;
+  overflow: hidden;
+  @include p7-block() { 
+  padding: 2.625rem 0 9.3125rem;
+
+   };
+
+  & > img {
+    position: absolute;
+    width:  clamp(99rem, 110vmin, 117.875rem);
+    height: clamp(52.5rem, 59vmin, 62.5625rem);
+    object-fit: cover;
+    transform: translate(14.9375rem);
+    left: 50%;
+    top: 1rem;
+    z-index: -1;
+    @include p19-block() { 
+      width:  clamp(62rem, 79vmin, 81.25rem);
+      height: clamp(33.5rem, 41vmin, 43.125rem);
+      top: 11.0625rem;;
+     };
+     @include p13-block() { 
+      width: 56.25rem;
+      height: 29.875rem;
+      top: 9.0625rem;
+      };
+      @include p10-block() { 
+        width: 37.5rem;
+        height: 19.875rem;
+        transform: translate(-3.8125rem);
+        top: 38.4375rem;
+        };
+      @include p7-block() { 
+        width: 31.25rem;
+        height: 16.5625rem;
+        transform: translate(1.0625rem);
+        top: 38.5rem;
+        };
+      @include p5-block() { 
+        width: 17.5rem;
+        height: 9.625rem;
+        transform: translate(0.625rem);
+        top: 33.75rem;
+        };
+  }
+}
+
+.content-button__wrap {
+  @include row-flex();
+  @include p7-block() {
+    flex-direction: column;
+  }
+  .content-button__wrapper {
+    @include col();
+    @include size(4);
+    @include shift-left(1);
+    @include shift-p22-left(1);
+    margin-top: 0.625rem;
+    @include size-p10(14);
+  }
+  .section-info__desc > p {
+    margin-bottom: 3.375rem;
+  }
+  .content-button__title {
+    margin-bottom: 1.875rem;
+  }
+  .section-info__list {
+  }
+  .section-info__list-item {
+    display: flex;
+    margin-bottom: 1.25rem;
+    & svg {
+      width: 1.0625rem;
+      height: 1.0625rem;
+    }
+  }
+  .section-info__list-item-text {
+    margin-left: 2.0625rem;
+    line-height: 1.375rem;
+  }
+  .content-button__btn {
+    padding: 0.75rem 2rem;
+    margin-top: 1.0625rem;
+    @include font('Bold');
+    font-size: 0.75rem;
+    line-height: 1.5625rem;
+    letter-spacing: -0.015rem;
+    color: $black;
+    text-transform: uppercase;
+  }
+
+  .content-button__wrapping {
+    @include col();
+    @include size(4);
+    @include shift-left(1);
+    @include shift-p22-left(1);
+    @include size-p10(14);
+    @include p10-block() {
+      order: -1;
+    }
+  }
+  .section-info__small {
+    margin-bottom: 4rem;
+  }
+  .section-info__big {
+  }
+}
